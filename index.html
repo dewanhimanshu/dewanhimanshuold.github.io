@@ -44,18 +44,21 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item active">
-              <a class="nav-link" href="#">Home
+              <a class="nav-link" href="#Home" >Home
                 <span class="sr-only">(current)</span>
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">About</a>
+              <a class="nav-link" href="#Education" data-scroll>Education</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Services</a>
+              <a class="nav-link" href="#Exp"  data-scroll>Experience</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Contact</a>
+              <a class="nav-link" href="#Skills"  data-scroll>Skills</a>
+            </li>
+              <li class="nav-item">
+              <a class="nav-link" href="#Contact"  data-scroll>Contact Me</a>
             </li>
           </ul>
         </div>
@@ -67,7 +70,7 @@
       <!-- Corusaal -->
     
       
-      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" id='Home'>
   <ol class="carousel-indicators">
     <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
     <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
@@ -75,13 +78,13 @@
   </ol>
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img class="d-block w-100" src='three.png' alt="First slide">
+      <img class="d-block w-100" src='three.png' alt="First slide" class="img-fluid" style='height: 90vh' >
     </div>
     <div class="carousel-item">
-      <img class="d-block w-100" src='one.jpg' alt="Second slide">
+      <img class="d-block w-100" src='one.jpg' alt="Second slide" class="img-fluid" style='height: 90vh' >
     </div>
     <div class="carousel-item">
-      <img class="d-block w-100" src='two.jpg' alt="Third slide">
+      <img class="d-block w-100" src='two.jpg' alt="Third slide" class="img-fluid" style='height: 90vh' >
     </div>
   </div>
   <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -99,10 +102,10 @@
       <!-- Jombotron -->
     
       
-      <div class="jumbotron jumbotron-fluid">
+      <div class="jumbotron jumbotron-fluid" id='Education'>
           
           <div class='container'>
-  <h1 class="display-4 text-center " data-aos="fade-up" data-aos-duration="600">Education</h1>
+  <h1 class="display-4 text-center " data-aos="fade-up" data-aos-duration="600" >Education</h1>
               <hr class="my-4">
        <p class="lead text-center " data-aos="fade-left" data-aos-duration="600">Bsc Computer Science,Hansraj College  </p>
   <p class='lead text-center text-muted' data-aos="fade-right" data-aos-duration="600">2017-20</p>
@@ -135,7 +138,7 @@
       </div>
       
       <!--card-->
-       <h1 class="display-4 text-center" data-aos="fade-up" data-aos-duration="600">Experience</h1>
+       <h1 class="display-4 text-center" data-aos="fade-up" data-aos-duration="600" id='Exp'>Experience</h1>
      
       <div class="card-group">
   <div class="card" data-aos="zoom-in" data-aos-duration="600">
@@ -167,7 +170,7 @@
 
       
       
-      <h1 class="display-4 text-center" data-aos="fade-up" data-aos-duration="600">Skills</h1>
+      <h1 class="display-4 text-center" data-aos="fade-up" data-aos-duration="600" id='Skills'>Skills</h1>
 <div class='container-fluid'>
     <div class='row'>
     <div class="c c-1  col-xs-12"  data-aos="flip-left" data-aos-duration="600" data-aos-delay="0">
@@ -214,7 +217,7 @@
       </div>      
       
       
-       <h1 class="display-4 text-center" data-aos="zoom-in" data-aos-duration="600">Contact Me</h1>
+       <h1 class="display-4 text-center" data-aos="zoom-in" data-aos-duration="600" id='Contact'>Contact Me</h1>
      <section id="contact" class="content-section text-center">
       <div class="container">
         <div class="row">
@@ -295,7 +298,18 @@
       
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src='vendor/smooth-scroll/smooth.js'></script>
     <script src="vendor/aos/aos.js"></script>
+    
+    
+    <script>
+         var scroll = new SmoothScroll('a[href*="#Exp"]');
+	var scroll = new SmoothScroll('a[href*="#Education"]');
+       
+        var scroll = new SmoothScroll('a[href*="#Skills"]');
+        var scroll = new SmoothScroll('a[href*="#Contact"]');
+       
+</script>
     
       <script src="script.js"></script>
 
