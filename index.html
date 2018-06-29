@@ -76,7 +76,8 @@
       <div style="height: 100vh;">
       
         <!-- particle -->
-      <!-- particles.js container --> <div id="particles-js" >  <div id="type"></div></div> <!-- stats - count particles --> <!-- particles.js lib - https://github.com/VincentGarreau/particles.js --> <script src="particle.js"></script> 
+      <!-- particles.js container --> <div id="particles-js" >  <div id="type"></div>   <a class="ct-btn-scroll ct-js-btn-scroll" href="#Education" id='scrolldownbtn'><img alt="Arrow Down Icon" src="https://www.solodev.com/assets/anchor/arrow-down.png"></a></div> <!-- stats - count particles --> <!-- particles.js lib - https://github.com/VincentGarreau/particles.js --> <script src="particle.js">
+          </script> 
       </div>
      <div id="type"></div>
       <script src=type.js></script>
@@ -96,6 +97,22 @@ typewriter.typeString('Hi I am Himanshu Dewan')
     .typeString('Full Stack Web Developer')
     .start();
 
+      </script>
+      
+      <script>
+$(document).ready(function(){
+  $("#scrolldownbtn").on('click', function(event) {
+    if (this.hash !== "") {
+      event.preventDefault();
+      var hash = this.hash;
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+        window.location.hash = hash;
+      });
+    } 
+  });
+});
       </script>
       
       
@@ -213,7 +230,7 @@ typewriter.typeString('Hi I am Himanshu Dewan')
       
       
       <h1 class="display-4 text-center" data-aos="fade-up" data-aos-duration="600" id='Skills'>Skills</h1>
-<div class='container-fluid'>
+<div class='container-fluid' style='padding: 0'>
     <div class='row'>
     <div class="c c-1  col-xs-12"  data-aos="flip-left" data-aos-duration="600" data-aos-delay="0">
         <div><img src='html-css.png' class="img-thumbnail float-right" style='width: 75px'></div>
