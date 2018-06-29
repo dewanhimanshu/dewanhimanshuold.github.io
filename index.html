@@ -73,14 +73,30 @@
       </div>
     </nav>
 
-      
+      <div style="height: 100vh;">
       
         <!-- particle -->
-      <!-- particles.js container --> <div id="particles-js"></div> <!-- stats - count particles --> <!-- particles.js lib - https://github.com/VincentGarreau/particles.js --> <script src="particle.js"></script> 
-    
-      
-      
-      
+      <!-- particles.js container --> <div id="particles-js" >  <div id="type"></div></div> <!-- stats - count particles --> <!-- particles.js lib - https://github.com/VincentGarreau/particles.js --> <script src="particle.js"></script> 
+      </div>
+     <div id="type"></div>
+      <script src=type.js></script>
+      <script>
+          var app = document.getElementById('type');
+
+var typewriter = new Typewriter(app, {
+    loop: true
+});
+
+typewriter.typeString('Hi I am Himanshu Dewan')
+    .pauseFor(2500)
+    .deleteAll()
+    .typeString('I am Web Developer')
+    .pauseFor(1500)
+    .deleteChars(13)
+    .typeString('Full Stack Web Developer')
+    .start();
+
+      </script>
       
       
       

@@ -158,3 +158,11 @@ html{
     max-width: 100%;
     overflow-x: hidden;
 }
+#type{
+   position: absolute;
+     top: 35vh;
+    left: 20vw;
+  
+    
+     font-size: 56px;
+}
