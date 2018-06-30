@@ -158,9 +158,10 @@ ul.dropdown-menu {
    position: absolute;
      top: 40vh;
     left: 22vw;
-  
-    
-     font-size: 56px;
+    font-size: 56px;
+    color: aliceblue;
+    font-family: cursive;
+   
 }
 .ct-btn-scroll {
     width: 49px;
