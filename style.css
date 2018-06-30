@@ -154,14 +154,10 @@ ul.dropdown-menu {
 }
 */
 
-html{
-    max-width: 100%;
-    overflow-x: hidden;
-}
 #type{
    position: absolute;
-     top: 35vh;
-    left: 20vw;
+     top: 40vh;
+    left: 22vw;
   
     
      font-size: 56px;
@@ -191,4 +187,9 @@ html{
   background: -webkit-linear-gradient(to left, #3a6186 , #89253e); /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to left, #3a6186 , #89253e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     color : #fff;    
+}
+
+html{
+    max-width: 100%;
+    overflow-x: hidden;
 }
