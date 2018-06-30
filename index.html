@@ -74,10 +74,10 @@
       </div>
     </nav>
 
-      <div style="height: 100vh;">
+      <div style="height: 100vh;" id="Home">
       
         <!-- particle -->
-      <!-- particles.js container --> <div id="particles-js" >  <div id="type"></div>   <a class="ct-btn-scroll ct-js-btn-scroll" href="#Education" id='scrolldownbtn'><img alt="Arrow Down Icon" src="https://www.solodev.com/assets/anchor/arrow-down.png"></a></div> <!-- stats - count particles --> <!-- particles.js lib - https://github.com/VincentGarreau/particles.js --> <script src="particle.js">
+      <!-- particles.js container --> <div id="particles-js"  >  <div id="type"></div>   <a class="ct-btn-scroll ct-js-btn-scroll" href="#Education" id='scrolldownbtn'><img alt="Arrow Down Icon" src="https://www.solodev.com/assets/anchor/arrow-down.png"></a></div> <!-- stats - count particles --> <!-- particles.js lib - https://github.com/VincentGarreau/particles.js --> <script src="particle.js">
           </script> 
       </div>
      <div id="type"></div>
@@ -100,22 +100,7 @@ typewriter.typeString('Hi I am Himanshu Dewan')
 
       </script>
       
-      <script>
-$(document).ready(function(){
-  $("#scrolldownbtn").on('click', function(event) {
-    if (this.hash !== "") {
-      event.preventDefault();
-      var hash = this.hash;
-      $('html, body').animate({
-        scrollTop: $(hash).offset().top
-      }, 800, function(){
-        window.location.hash = hash;
-      });
-    } 
-  });
-});
-      </script>
-      
+
       
       
       
@@ -371,7 +356,7 @@ $(document).ready(function(){
 			  				<label for ="description"> Message</label>
 			  			 	<textarea name='msg'   class="form-control" id="description" placeholder="Enter Your Message"></textarea>
                             
-                            	<button type="submit" class="btn btn-default submit" style="margin: 20px;"><i class="fa fa-paper-plane" aria-hidden="true"></i>  Send Message</button>
+                            	<button type="submit"   class="btn btn-default submit" style="margin: 20px;"><i class="fa fa-paper-plane" aria-hidden="true"></i>  Send Message</button>
                             </form>
              </div>
          </div>
@@ -439,6 +424,28 @@ $(document).ready(function(){
     
       <script src="script.js"></script>
     <script src="https://s.pageclip.co/v1/pageclip.js" charset="utf-8"></script>
+          <script>
+$(document).ready(function(){
+  $("#scrolldownbtn").on('click', function(event) {
+    if (this.hash !== "") {
+      event.preventDefault();
+      var hash = this.hash;
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+        window.location.hash = hash;
+      });
+    } 
+  });
+});
+    </script>
+    
+    <script>
+    $('.nav-item').click(function(){
+    $('.nav-item').removeClass('active');
+    $(this).addClass('active');
+});
+    </script>
 
   </body>
 
