@@ -75,7 +75,7 @@ ul.banner-social-buttons {
 
 @media (max-width: 767px) {
   ul.banner-social-buttons li {
-    display: block;
+    display: inline-block;
     margin-bottom: 20px;
     padding: 0;
   }
@@ -194,3 +194,40 @@ html{
     max-width: 100%;
     overflow-x: hidden;
 }
+
+input{
+  background: transparent !important;
+  border: 0 !important;
+  border-bottom: 2px solid black !important;
+  color:black !important;
+
+}
+input:focus{
+  background: transparent !important;
+  border: 0 !important;
+  border: 2px solid blueviolet !important;
+
+}
+input::placeholder { 
+  color: black !important;
+  opacity: 1;
+}
+textarea{
+  background: transparent !important;
+  border: 0 !important;
+  border-bottom: 2px solid black !important;
+  color:black !important;
+
+}
+textarea:focus{
+  background: transparent !important;
+  border: 0 !important;
+  border: 2px solid blueviolet !important;
+
+}
+textarea::placeholder { 
+  color: black !important;
+  opacity: 1;
+}
+
+  
